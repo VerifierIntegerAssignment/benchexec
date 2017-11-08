@@ -18,9 +18,11 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
+import os
+import benchexec.util as util
 import benchexec.tools.template
 import benchexec.result as result
-import os
+
 class Tool(benchexec.tools.template.BaseTool):
 
     REQUIRED_PATHS = ["viap_tool.py","viap_svcomp.py","config.properties","SyntaxFilter.py","graphclass.py","commandclass.py","packages"]
